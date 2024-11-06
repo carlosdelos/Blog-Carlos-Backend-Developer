@@ -1346,17 +1346,18 @@ button
         margin-top: 0px;
         padding-top: 15px;
         width:480px;
-        height:430px;  
+        height:auto;  
         padding-left: 0px;
     }
 
     #li-foto-experiencia1
     { 
         width: 100%;
-        height: 90%;
+        height: auto;
         display: flex;
         justify-content: center;
         margin-top: 20px;
+        flex: 0;
     }
     #fotomia
     {
@@ -1547,6 +1548,11 @@ button
      #texto_proy
      {
          font-size: 12px;
+     }
+     .li-foto-experiencia
+     {
+        height: auto;
+        flex: 0;
      }
 }
 
