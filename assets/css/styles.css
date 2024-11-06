@@ -1469,7 +1469,8 @@ button
     .piepagina
     {
         box-shadow: none;
-        border-top: solid 3px rgb(214, 214, 214);  
+        border-top: solid 3px rgb(214, 214, 214);
+        margin-top: 50%;
     }
     #copy
     {
@@ -1568,11 +1569,15 @@ button
     {
         position: relative;
         margin-top: 100%;
-        top: 150px;
+        top:350px;
     }
     .li-botones-desc
     {
-        margin-top: 15%;
+        margin-top: 30%;
+    }
+    .piepagina
+    {
+        margin-top: 120%;
     }
 
     
