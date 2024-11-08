@@ -98,6 +98,10 @@
     margin-left: 4%;
     margin-right: 4%;
     text-align: left;
+    border-bottom: 3px solid rgb(68, 68, 68);
+    border-top: 3px solid rgb(68, 68, 68);
+    padding-top: 50px;
+    padding-bottom: 50px;
 
 }
 .capturas
@@ -124,7 +128,7 @@
     height: 40vh;
     object-fit: scale-down;
     object-position: center;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 #imagen_capturas2
 {
@@ -1493,7 +1497,7 @@ button
     
     #texto_proy
     {
-        margin-top: 30px;
+        margin-top: 45px;
         font-size: 16px;
     }
     #texto_proy
