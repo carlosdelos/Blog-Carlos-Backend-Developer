@@ -221,7 +221,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 53vh; /* Solo cubre la mitad de la primera sección */
+    height: 53vh; /* Solo cubre la mitad de l primera sección */
     background: linear-gradient(0deg, rgba(53, 135, 211, 0.712) 0%, rgba(200, 220, 240, 1) 100%);
     z-index: -1; /* Colocado detrás de otros elementos */
     overflow: hidden; /* Ocultar contenido sobrante */
