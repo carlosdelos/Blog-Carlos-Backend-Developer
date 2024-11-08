@@ -216,6 +216,45 @@
     width: 100%;
     height: 18%;
 }
+.medio_fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 53vh; /* Solo cubre la mitad de la primera sección */
+    background: linear-gradient(0deg, rgba(53, 135, 211, 0.712) 0%, rgba(200, 220, 240, 1) 100%);
+    z-index: -1; /* Colocado detrás de otros elementos */
+    overflow: hidden; /* Ocultar contenido sobrante */
+    box-shadow: 0px 2px 4px rgba(41, 128, 185), 0px 0px 8px rgba(105, 158, 194, 0.815);
+}
+
+/* Creación de ondas sutiles */
+.medio_fondo::before, .medio_fondo::after {
+    content: '';
+    position: absolute;
+    width: 200%; /* Más ancho que el contenedor para lograr una curva amplia */
+    height: 100%;
+    background: repeating-radial-gradient(
+        circle at 50% 0%, /* Coloca el centro de las ondas en el borde superior central */
+        rgba(255, 255, 255, 0.1), /* Color de la onda */
+        rgba(255, 255, 255, 0.1) 2px,
+        transparent 140px /* Mayor separación entre ondas */
+    );
+    opacity: 0.6;
+    transform: rotate(15deg); /* Inclinación para un efecto de onda */
+}
+
+/* Configuración adicional para las ondas */
+.medio_fondo::before {
+    top: -20%;
+    left: -30%;
+}
+
+.medio_fondo::after {
+    top: 25%;
+    left: -40%;
+    transform: rotate(-10deg);
+}
 
 .texto-tiutlo
 {
@@ -238,6 +277,7 @@
     margin: auto;
     margin-bottom: 2%;
     padding: auto;
+    margin-top: 10px;
 }
 .play
 {
@@ -1562,6 +1602,10 @@ button
         width: 100%;
         height: auto;
         margin-bottom: 0px;
+    }
+    .medio_fondo {
+        width: 100%;
+        height: 40vh;
     }
     
 }
